@@ -37,23 +37,6 @@ public class Task2Dog {
             return breed;
         }
 
-        public static void main(String[] args) {
-
-            // Creating two Dog objects using the constructor
-            Dog dog1 = new Dog("Rocky", "German Shepherd");
-            Dog dog2 = new Dog("Milo", "Bulldog");
-
-            // Updating attributes using setter methods
-            dog1.setName("Bruno");
-            dog1.setBreed("Rottweiler");
-
-            dog2.setName("Max");
-            dog2.setBreed("Labrador");
-
-            // Printing updated values
-            System.out.println("Dog 1 - Name: " + dog1.getName() + ", Breed: " + dog1.getBreed());
-            System.out.println("Dog 2 - Name: " + dog2.getName() + ", Breed: " + dog2.getBreed());
-        }
     }
 
 }
