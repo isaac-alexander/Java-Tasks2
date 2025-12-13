@@ -19,18 +19,6 @@ public class Task1Person {
             System.out.println("Name: " + name + ", Age: " + age);
         }
 
-        public static void main(String[] args) {
-
-            // Create first Person object using constructor
-            Person person1 = new Person("John", 25);
-
-            // Create second Person object using constructor
-            Person person2 = new Person("Mary", 30);
-
-            // Print their details
-            person1.displayInfo();
-            person2.displayInfo();
-        }
     }
 
 }
