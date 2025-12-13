@@ -24,15 +24,5 @@ public class Task3Rectangle {
         }
     }
 
-        public static void main(String[] args) {
-            // Create a Rectangle instance
-            Rectangle r1 = new Rectangle(5, 10);
-
-            System.out.println("Width: " + r1.width);
-            System.out.println("Height: " + r1.height);
-
-            System.out.println("Area: " + r1.getArea());
-            System.out.println("Perimeter: " + r1.getPerimeter());
-        }
 
 }
