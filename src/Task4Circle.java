@@ -31,18 +31,4 @@ public class Task4Circle {
         }
     }
 
-    public static void main(String[] args) {
-        // Create a Circle instance
-        Circle c1 = new Circle(7);
-
-        System.out.println("Initial Radius: " + c1.getRadius());
-        System.out.println("Area: " + c1.getArea());
-        System.out.println("Circumference: " + c1.getCircumference());
-
-        // Modify radius
-        c1.setRadius(10);
-        System.out.println("\nUpdated Radius: " + c1.getRadius());
-        System.out.println("Updated Area: " + c1.getArea());
-        System.out.println("Updated Circumference: " + c1.getCircumference());
-    }
 }
