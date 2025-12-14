@@ -1,0 +1,11 @@
+equalsIgnoreCase is a String method in Java used to compare two strings while ignoring letter case (uppercase or lowercase).
+
+It checks whether two strings have the same letters, even if one is uppercase and the other is lowercase.
+
+Syntax
+string1.equalsIgnoreCase(string2)
+
+
+Returns true if both strings are the same (ignoring case)
+
+Returns false otherwise
