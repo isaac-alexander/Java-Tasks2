@@ -89,5 +89,32 @@ public class Test {
         emp1.displayEmployee();
         System.out.println("Updated Annual Salary: " + emp1.calculateAnnualSalary());
 
+        // TASK 7
+
+        Task7Bank.Bank bank = new Task7Bank.Bank();
+
+        // Create account objects
+        Task7Bank.Account acc1 = new Task7Bank.Account(101, "John", 5000);
+        Task7Bank.Account acc2 = new Task7Bank.Account(102, "Mary", 8000);
+
+        // Add accounts to bank
+        bank.addAccount(acc1);
+        bank.addAccount(acc2);
+
+        bank.showAccounts();
+
+        // Deposit and withdraw
+        bank.depositToAccount(101, 2000);
+        bank.withdrawFromAccount(102, 3000);
+
+        bank.showAccounts();
+
+        // Remove an account
+        bank.removeAccount(101);
+
+        bank.showAccounts();
+
+        // TASK 8
+
     }
 }
