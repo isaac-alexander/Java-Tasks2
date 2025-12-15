@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Test {
     public static void main(String[] args) {
         // TASK1
@@ -116,5 +118,82 @@ public class Test {
 
         // TASK 8
 
+        // Create a TrafficLight object
+        Task8TrafficLight.TrafficLight light = new Task8TrafficLight.TrafficLight("red", 60);
+
+        light.displayStatus();
+        System.out.println("Is Red? " + light.isRed());
+        System.out.println("Is Green? " + light.isGreen());
+
+        // Change color
+        light.changeColor("green");
+        System.out.println("\nAfter changing color:");
+
+        light.displayStatus();
+        System.out.println("Is Red? " + light.isRed());
+        System.out.println("Is Green? " + light.isGreen());
+
+        // TASK 9
+
+        // First employee object
+        Task9Employee.Employee employee1 = new Task9Employee.Employee(
+                "David",
+                60000,
+                LocalDate.of(2018, 5, 10)
+        );
+
+        // Second employee object
+        Task9Employee.Employee employee2 = new Task9Employee.Employee(
+                "Sarah",
+                55000,
+                LocalDate.of(2020, 3, 15)
+        );
+
+        // Display details
+        employee1.displayEmployee();
+        System.out.println();
+        employee2.displayEmployee();
+
+
+        // TASK 10
+
+        // Create a Student object
+        Task10Student.Student student1 = new Task10Student.Student("Alex", "A");
+
+        // Add courses
+        student1.addCourse("Mathematics");
+        student1.addCourse("Physics");
+        student1.addCourse("Computer Science");
+
+        // Display student details
+        student1.displayStudent();
+
+        // Remove a course
+        student1.removeCourse("Physics");
+
+        // Display updated details
+        System.out.println("\nAfter removing a course:");
+        student1.displayStudent();
+
+        // TASK 11
+        Task11Library.Library schoolLibrary = new Task11Library.Library();
+
+        // Create book objects
+        Task11Library.Book book1 = new Task11Library.Book("Java Basics", "John Doe");
+        Task11Library.Book book2 = new Task11Library.Book("OOP Concepts", "Mary Smith");
+        Task11Library.Book book3 = new Task11Library.Book("Data Structures", "Alan Walker");
+
+        // Add books to the library
+        schoolLibrary.addBook(book1);
+        schoolLibrary.addBook(book2);
+        schoolLibrary.addBook(book3);
+
+        schoolLibrary.showBooks();
+
+        // Remove a book
+        schoolLibrary.removeBook("OOP Concepts");
+
+        // Display updated list
+        schoolLibrary.showBooks();
     }
 }
