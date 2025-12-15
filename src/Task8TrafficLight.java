@@ -35,21 +35,4 @@ public class Task8TrafficLight {
         }
     }
 
-    public static void main(String[] args) {
-
-        // Create a TrafficLight object
-        TrafficLight light = new TrafficLight("red", 60);
-
-        light.displayStatus();
-        System.out.println("Is Red? " + light.isRed());
-        System.out.println("Is Green? " + light.isGreen());
-
-        // Change color
-        light.changeColor("green");
-        System.out.println("\nAfter changing color:");
-
-        light.displayStatus();
-        System.out.println("Is Red? " + light.isRed());
-        System.out.println("Is Green? " + light.isGreen());
-    }
 }
