@@ -195,5 +195,77 @@ public class Test {
 
         // Display updated list
         schoolLibrary.showBooks();
+
+        // TASK 12
+
+        // Create an Airplane object
+        Task12Airplane.Airplane flight1 = new Task12Airplane.Airplane("BA123", "London", "10:30 AM");
+
+        // Display flight information
+        flight1.displayFlightInfo();
+
+        // Check flight status (on time)
+        flight1.checkFlightStatus();
+
+        // Delay the flight
+        flight1.delayFlight();
+
+        // Check flight status again
+        flight1.checkFlightStatus();
+
+        // TASK 13
+
+        // Create an Inventory object
+        Task13Inventory.Inventory storeInventory = new Task13Inventory.Inventory();
+
+        // Add products
+        storeInventory.addProduct(new Task13Inventory.Product("Pen", 5));
+        storeInventory.addProduct(new Task13Inventory.Product("Book", 2));
+        storeInventory.addProduct(new Task13Inventory.Product("Notebook", 10));
+
+        // Remove a product
+        storeInventory.removeProduct("Pen");
+
+        // Check for low inventory using limit
+        storeInventory.checkLowInventory(3);
+
+        // TASK 14
+
+        // Create a School object
+        Task14School.School mySchool = new Task14School.School();
+
+        // Add students
+        mySchool.addStudent(new Task14School.Student("Alex"));
+        mySchool.addStudent(new Task14School.Student("Bella"));
+
+        // Add teachers
+        mySchool.addTeacher(new Task14School.Teacher("Mr. John"));
+        mySchool.addTeacher(new Task14School.Teacher("Mrs. Smith"));
+
+        // Create classes
+        mySchool.createClass(new Task14School.ClassRoom("Math"));
+        mySchool.createClass(new Task14School.ClassRoom("English"));
+
+        // Remove a student and a teacher
+        mySchool.removeStudent("Alex");
+        mySchool.removeTeacher("Mr. John");
+
+        // Display remaining students
+        System.out.println("Students:");
+        for (int i = 0; i < mySchool.studentCount; i++) {
+            System.out.println(mySchool.students[i].name);
+        }
+
+        // Display remaining teachers
+        System.out.println("Teachers:");
+        for (int i = 0; i < mySchool.teacherCount; i++) {
+            System.out.println(mySchool.teachers[i].name);
+        }
+
+        // Display classes
+        System.out.println("Classes:");
+        for (int i = 0; i < mySchool.classCount; i++) {
+            System.out.println(mySchool.classes[i].className);
+        }
     }
 }
