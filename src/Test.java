@@ -267,5 +267,57 @@ public class Test {
         for (int i = 0; i < mySchool.classCount; i++) {
             System.out.println(mySchool.classes[i].className);
         }
+
+        // TASK 15
+
+        // Create a MusicLibrary object
+        Task15MusicLibrary.MusicLibrary myMusicLibrary = new Task15MusicLibrary.MusicLibrary();
+
+        // Add songs
+        myMusicLibrary.addSong(new Task15MusicLibrary.Song("Song One"));
+        myMusicLibrary.addSong(new Task15MusicLibrary.Song("Song Two"));
+        myMusicLibrary.addSong(new Task15MusicLibrary.Song("Song Three"));
+
+        // Remove a song
+        myMusicLibrary.removeSong("Song Two");
+
+        // Play a random song
+        myMusicLibrary.playRandomSong();
+
+        // TASK 16
+
+        // Create Rectangle object
+        Task16Shape.Shape rectangle = new Task16Shape.Rectangle(5, 10);
+        System.out.println("Rectangle Area: " + rectangle.getArea());
+        System.out.println("Rectangle Perimeter: " + rectangle.getPerimeter());
+
+        // Create Circle object
+        Task16Shape.Shape circle = new Task16Shape.Circle(7);
+        System.out.println("Circle Area: " + circle.getArea());
+        System.out.println("Circle Perimeter: " + circle.getPerimeter());
+
+        // Create Triangle object
+        Task16Shape.Shape triangle = new Task16Shape.Triangle(3, 4, 5);
+        System.out.println("Triangle Area: " + triangle.getArea());
+        System.out.println("Triangle Perimeter: " + triangle.getPerimeter());
+
+        // TASK 17
+
+        // Create a Movie object for Rush Hour
+        Task17Movie.Movie movie1 = new Task17Movie.Movie("Rush Hour", "Brett Ratner");
+
+        // Add actors
+        movie1.addActor("Jackie Chan");
+        movie1.addActor("Chris Tucker");
+
+        // Add reviews
+        movie1.addReview("Very funny and entertaining.");
+        movie1.addReview("Great action and comedy.");
+
+        // Display movie details
+        movie1.showMovieDetails();
+
+        // Display reviews
+        movie1.showReviews();
     }
 }
