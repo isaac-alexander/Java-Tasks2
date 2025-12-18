@@ -319,5 +319,64 @@ public class Test {
 
         // Display reviews
         movie1.showReviews();
+
+        // TASK 18
+
+        // Create a Restaurant object
+        Task18Restaurant.Restaurant myRestaurant = new Task18Restaurant.Restaurant();
+
+        // Add menu items (as requested)
+        myRestaurant.addItem("Burger", 5.99, 4);
+        myRestaurant.addItem("Pizza", 8.49, 5);
+        myRestaurant.addItem("Meat Pie", 4.25, 4);
+
+        // Show menu
+        myRestaurant.showMenu();
+
+        // Remove an item
+        myRestaurant.removeItem("Meat Pie");
+
+        // Show updated menu
+        myRestaurant.showMenu();
+
+        // Show average rating
+        System.out.println("Average Rating: " + myRestaurant.getAverageRating());
+
+        // TASK 19
+
+        // Create TravelService object
+        Task19TravelBooking.TravelService travelService = new Task19TravelBooking.TravelService();
+
+        // Search for flights and hotels
+        travelService.searchFlight("London");
+        travelService.searchHotel("London");
+
+        // Book reservations
+        travelService.bookFlight();
+        travelService.bookHotel();
+
+        // Cancel reservations
+        travelService.cancelFlight();
+        travelService.cancelHotel();
+
+        // TASK 20
+
+        // Create SavingsAccount object
+        Task20BankAccount.SavingsAccount savingsAcc = new Task20BankAccount.SavingsAccount(
+                12345,
+                "John Doe",
+                1000.0,
+                5.0
+        );
+
+        System.out.println("Account Holder: " + savingsAcc.accountHolderName);
+        System.out.println("Account Number: " + savingsAcc.accountNumber);
+
+        savingsAcc.checkBalance();
+        savingsAcc.deposit(500);
+        savingsAcc.withdraw(300);
+        savingsAcc.applyInterest();
+        savingsAcc.checkBalance();
+
     }
 }
