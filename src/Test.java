@@ -378,5 +378,17 @@ public class Test {
         savingsAcc.applyInterest();
         savingsAcc.checkBalance();
 
+        // TASK 21
+
+        // Create Car object
+        Task21Vehicle.Car car1 = new Task21Vehicle.Car("Toyota", "Corolla", 2020, 470);
+        car1.showDetails();
+
+        System.out.println();
+
+        // Create Truck object
+        Task21Vehicle.Truck truck1 = new Task21Vehicle.Truck("Ford", "F-150", 2019, 1200);
+        truck1.showDetails();
+
     }
 }
