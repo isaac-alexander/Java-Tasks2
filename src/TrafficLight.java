@@ -1,9 +1,8 @@
 // 8. Write a Java program to create a class called "TrafficLight" with attributes
 // for color and duration, and methods to change the color and check for red or green.
 
-public class Task8TrafficLight {
+public class TrafficLight {
 
-    static class TrafficLight {
         String color;
         int duration; // duration in seconds
 
@@ -33,6 +32,5 @@ public class Task8TrafficLight {
             System.out.println("Color: " + color);
             System.out.println("Duration: " + duration + " seconds");
         }
-    }
 
 }

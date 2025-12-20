@@ -1,8 +1,7 @@
 // 4. Write a Java program to create a class called "Circle" with a radius attribute.
 // You can access and modify this attribute. Calculate the area and circumference of the circle.
 
-public class Task4Circle {
-    static class Circle {
+public class Circle {
         double radius;
 
         // Constructor
@@ -29,6 +28,5 @@ public class Task4Circle {
         double getCircumference() {
             return 2 * Math.PI * radius;
         }
-    }
 
 }

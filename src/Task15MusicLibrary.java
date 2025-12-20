@@ -52,4 +52,20 @@ public class Task15MusicLibrary {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create a MusicLibrary object
+        MusicLibrary myMusicLibrary = new MusicLibrary();
+
+        // Add songs
+        myMusicLibrary.addSong(new Song("Song One"));
+        myMusicLibrary.addSong(new Song("Song Two"));
+        myMusicLibrary.addSong(new Song("Song Three"));
+
+        // Remove a song
+        myMusicLibrary.removeSong("Song Two");
+
+        // Play a random song
+        myMusicLibrary.playRandomSong();
+    }
 }

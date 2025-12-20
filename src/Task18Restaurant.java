@@ -58,4 +58,26 @@ public class Task18Restaurant {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create a Restaurant object
+        Restaurant myRestaurant = new Restaurant();
+
+        // Add menu items (as requested)
+        myRestaurant.addItem("Burger", 5.99, 4);
+        myRestaurant.addItem("Pizza", 8.49, 5);
+        myRestaurant.addItem("Meat Pie", 4.25, 4);
+
+        // Show menu
+        myRestaurant.showMenu();
+
+        // Remove an item
+        myRestaurant.removeItem("Meat Pie");
+
+        // Show updated menu
+        myRestaurant.showMenu();
+
+        // Show average rating
+        System.out.println("Average Rating: " + myRestaurant.getAverageRating());
+    }
 }

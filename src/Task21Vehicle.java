@@ -57,4 +57,16 @@ public class Task21Vehicle {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create Car object
+        Car car1 = new Car("Toyota", "Corolla", 2020, 470);
+        car1.showDetails();
+
+        System.out.println();
+
+        // Create Truck object
+        Truck truck1 = new Truck("Ford", "F-150", 2019, 1200);
+        truck1.showDetails();
+    }
 }

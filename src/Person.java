@@ -1,10 +1,8 @@
 // Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
 
 
-public class Task1Person {
+public class Person {
     // This class represents a Person with a name and age
-    public static class Person {
-
         String name;  // attribute to store the person's name
         int age;      // attribute to store the person's age
 
@@ -18,7 +16,4 @@ public class Task1Person {
         public void displayInfo() {
             System.out.println("Name: " + name + ", Age: " + age);
         }
-
-    }
-
 }

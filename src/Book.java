@@ -1,9 +1,8 @@
 // 5. Write a Java program to create a class called "Book" with attributes for
 // title, author, and ISBN, and methods to add and remove books from a collection.
 
-public class Task5Book {
+public class Book {
 
-    static class Book {
         String title;
         String author;
         String isbn;
@@ -14,7 +13,6 @@ public class Task5Book {
             this.author = author;
             this.isbn = isbn;
         }
-    }
 
     static class BookCollection {
         Book[] books = new Book[10]; // simple fixed-size collection

@@ -59,4 +59,27 @@ public class Task11Library {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Renamed variable to avoid duplicate name conflict
+        Library schoolLibrary = new Library();
+
+        // Create book objects
+        Book book1 = new Book("Java Basics", "John Doe");
+        Book book2 = new Book("OOP Concepts", "Mary Smith");
+        Book book3 = new Book("Data Structures", "Alan Walker");
+
+        // Add books to the library
+        schoolLibrary.addBook(book1);
+        schoolLibrary.addBook(book2);
+        schoolLibrary.addBook(book3);
+
+        schoolLibrary.showBooks();
+
+        // Remove a book
+        schoolLibrary.removeBook("OOP Concepts");
+
+        // Display updated list
+        schoolLibrary.showBooks();
+    }
 }

@@ -39,4 +39,21 @@ public class Task12Airplane {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create an Airplane object
+        Airplane flight1 = new Airplane("BA123", "London", "10:30 AM");
+
+        // Display flight information
+        flight1.displayFlightInfo();
+
+        // Check flight status (on time)
+        flight1.checkFlightStatus();
+
+        // Delay the flight
+        flight1.delayFlight();
+
+        // Check flight status again
+        flight1.checkFlightStatus();
+    }
 }

@@ -84,4 +84,21 @@ public class Task16Shape {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create Rectangle object
+        Shape rectangle = new Rectangle(5, 10);
+        System.out.println("Rectangle Area: " + rectangle.getArea());
+        System.out.println("Rectangle Perimeter: " + rectangle.getPerimeter());
+
+        // Create Circle object
+        Shape circle = new Circle(7);
+        System.out.println("Circle Area: " + circle.getArea());
+        System.out.println("Circle Perimeter: " + circle.getPerimeter());
+
+        // Create Triangle object
+        Shape triangle = new Triangle(3, 4, 5);
+        System.out.println("Triangle Area: " + triangle.getArea());
+        System.out.println("Triangle Perimeter: " + triangle.getPerimeter());
+    }
 }

@@ -1,9 +1,8 @@
 // 6. Write a Java program to create a class called "Employee" with a name,
 // job title, and salary attributes, and methods to calculate and update salary.
 
-public class Task6Employee {
+public class Employee {
 
-    static class Employee {
         String name;
         String jobTitle;
         double salary;
@@ -31,6 +30,5 @@ public class Task6Employee {
             System.out.println("Job Title: " + jobTitle);
             System.out.println("Salary: " + salary);
         }
-    }
 
 }

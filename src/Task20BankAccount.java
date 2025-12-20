@@ -59,4 +59,23 @@ public class Task20BankAccount {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create SavingsAccount object
+        SavingsAccount savingsAcc = new SavingsAccount(
+                12345,
+                "John Doe",
+                1000.0,
+                5.0
+        );
+
+        System.out.println("Account Holder: " + savingsAcc.accountHolderName);
+        System.out.println("Account Number: " + savingsAcc.accountNumber);
+
+        savingsAcc.checkBalance();
+        savingsAcc.deposit(500);
+        savingsAcc.withdraw(300);
+        savingsAcc.applyInterest();
+        savingsAcc.checkBalance();
+    }
 }

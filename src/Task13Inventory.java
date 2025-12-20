@@ -52,4 +52,20 @@ public class Task13Inventory {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create an Inventory object
+        Inventory storeInventory = new Inventory();
+
+        // Add products
+        storeInventory.addProduct(new Product("Pen", 5));
+        storeInventory.addProduct(new Product("Book", 2));
+        storeInventory.addProduct(new Product("Notebook", 10));
+
+        // Remove a product
+        storeInventory.removeProduct("Pen");
+
+        // Check for low inventory using limit
+        storeInventory.checkLowInventory(3);
+    }
 }

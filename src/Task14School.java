@@ -89,4 +89,43 @@ public class Task14School {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create a School object
+        School mySchool = new School();
+
+        // Add students
+        mySchool.addStudent(new Student("Alex"));
+        mySchool.addStudent(new Student("Bella"));
+
+        // Add teachers
+        mySchool.addTeacher(new Teacher("Mr. John"));
+        mySchool.addTeacher(new Teacher("Mrs. Smith"));
+
+        // Create classes
+        mySchool.createClass(new ClassRoom("Math"));
+        mySchool.createClass(new ClassRoom("English"));
+
+        // Remove a student and a teacher
+        mySchool.removeStudent("Alex");
+        mySchool.removeTeacher("Mr. John");
+
+        // Display remaining students
+        System.out.println("Students:");
+        for (int i = 0; i < mySchool.studentCount; i++) {
+            System.out.println(mySchool.students[i].name);
+        }
+
+        // Display remaining teachers
+        System.out.println("Teachers:");
+        for (int i = 0; i < mySchool.teacherCount; i++) {
+            System.out.println(mySchool.teachers[i].name);
+        }
+
+        // Display classes
+        System.out.println("Classes:");
+        for (int i = 0; i < mySchool.classCount; i++) {
+            System.out.println(mySchool.classes[i].className);
+        }
+    }
 }

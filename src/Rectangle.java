@@ -2,8 +2,7 @@
 
 
 
-public class Task3Rectangle {
-    static class Rectangle {
+public class Rectangle {
         double width;
         double height;
 
@@ -22,7 +21,5 @@ public class Task3Rectangle {
         double getPerimeter() {
             return 2 * (width + height);
         }
-    }
-
 
 }

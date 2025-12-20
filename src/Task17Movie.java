@@ -53,4 +53,23 @@ public class Task17Movie {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create a Movie object for Rush Hour
+        Movie movie1 = new Movie("Rush Hour", "Brett Ratner");
+
+        // Add actors
+        movie1.addActor("Jackie Chan");
+        movie1.addActor("Chris Tucker");
+
+        // Add reviews
+        movie1.addReview("Very funny and entertaining.");
+        movie1.addReview("Great action and comedy.");
+
+        // Display movie details
+        movie1.showMovieDetails();
+
+        // Display reviews
+        movie1.showReviews();
+    }
 }

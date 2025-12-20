@@ -49,4 +49,21 @@ public class Task19TravelBooking {
         }
     }
 
+    public static void main(String[] args) {
+
+        // Create TravelService object
+        TravelService travelService = new TravelService();
+
+        // Search for flights and hotels
+        travelService.searchFlight("London");
+        travelService.searchHotel("London");
+
+        // Book reservations
+        travelService.bookFlight();
+        travelService.bookHotel();
+
+        // Cancel reservations
+        travelService.cancelFlight();
+        travelService.cancelHotel();
+    }
 }

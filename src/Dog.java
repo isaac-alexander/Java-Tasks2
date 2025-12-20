@@ -1,12 +1,10 @@
 // 2. Write a Java program to create a class called "Dog" with a name and breed attribute. Create two instances of the "Dog" class, set their attributes using the constructor and modify the attributes using the setter methods and print the updated values.
 
 
-public class Task2Dog {
+public class Dog {
     // This program creates a Dog class with name and breed attributes.
 // It creates two Dog objects using a constructor, updates their values
 // using setter methods, and prints the updated values.
-
-    public static class Dog {
 
         private String name;
         private String breed;
@@ -36,7 +34,5 @@ public class Task2Dog {
         public String getBreed() {
             return breed;
         }
-
-    }
 
 }
