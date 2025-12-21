@@ -171,27 +171,126 @@ public class Test {
         student1.displayStudent();
 
 
-        // TASK 11
+        // TASK 11 LIBRARY
+        // Create Library object
+        Library schoolLibrary = new Library();
 
-        // TASK 12
+        // Create LibraryBook objects
+        LibraryBook book1 = new LibraryBook("Java Basics", "John Doe");
+        LibraryBook book2 = new LibraryBook("OOP Concepts", "Mary Smith");
+        LibraryBook book3 = new LibraryBook("Data Structures", "Alan Walker");
 
-        // TASK 13
+        // Add books to the library
+        schoolLibrary.addBook(book1);
+        schoolLibrary.addBook(book2);
+        schoolLibrary.addBook(book3);
 
-        // TASK 14
+        // Show all books
+        schoolLibrary.showBooks();
 
-        // TASK 15
+        // Remove a book
+        schoolLibrary.removeBook("OOP Concepts");
 
-        // TASK 16
+        // Show updated list
+        schoolLibrary.showBooks();
 
-        // TASK 17
 
-        // TASK 18
+        // TASK 12 AIRPLANE
 
-        // TASK 19
+        // Create an Airplane object
+        Airplane flight1 = new Airplane("BA123", "London", "10:30 AM");
 
-        // TASK 20
+        // Display flight information
+        flight1.displayFlightInfo();
 
-        // TASK 21
+        // Check flight status (on time)
+        flight1.checkFlightStatus();
+
+        // Delay the flight
+        flight1.delayFlight();
+
+        // Check flight status again
+        flight1.checkFlightStatus();
+
+        // TASK 13 INVENTORY
+        // Create Inventory object
+        Inventory storeInventory = new Inventory();
+
+        // Add products
+        storeInventory.addProduct(new InventoryProduct("Pen", 5));
+        storeInventory.addProduct(new InventoryProduct("Book", 2));
+        storeInventory.addProduct(new InventoryProduct("Notebook", 10));
+
+        // Remove a product
+        storeInventory.removeProduct("Pen");
+
+        // Check for low stock (limit = 3)
+        storeInventory.checkLowStock(3);
+
+        // TASK 14 SCHOOL
+        // Create School object
+        School mySchool = new School();
+
+        // Add students
+        mySchool.addStudent(new SchoolStudent("Alex"));
+        mySchool.addStudent(new SchoolStudent("Bella"));
+
+        // Add teachers
+        mySchool.addTeacher(new Teacher("Mr. John"));
+        mySchool.addTeacher(new Teacher("Mrs. Smith"));
+
+        // Create classes
+        mySchool.createClass(new SchoolClass("Math"));
+        mySchool.createClass(new SchoolClass("English"));
+
+        // Remove one student and one teacher
+        mySchool.removeStudent("Alex");
+        mySchool.removeTeacher("Mr. John");
+
+        // Display students
+        System.out.println("Students:");
+        for (int i = 0; i < mySchool.studentCount; i++) {
+            System.out.println(mySchool.students[i].name);
+        }
+
+        // Display teachers
+        System.out.println("Teachers:");
+        for (int i = 0; i < mySchool.teacherCount; i++) {
+            System.out.println(mySchool.teachers[i].name);
+        }
+
+        // Display classes
+        System.out.println("Classes:");
+        for (int i = 0; i < mySchool.classCount; i++) {
+            System.out.println(mySchool.classes[i].className);
+        }
+
+            // TASK 15 MUSIC LIBRARY
+
+        MusicLibrary myMusicLibrary = new MusicLibrary();
+
+        // Add songs
+        myMusicLibrary.addSong(new Song("Song One"));
+        myMusicLibrary.addSong(new Song("Song Two"));
+        myMusicLibrary.addSong(new Song("Song Three"));
+
+        // Remove a song
+        myMusicLibrary.removeSong("Song Two");
+
+        // Play a random song
+        myMusicLibrary.playRandomSong();
+
+        // TASK 16 SHAPE
+
+        // TASK 17 MOVIE
+
+        // TASK 18 RESTAURANT
+
+        // TASK 19 TRAVEL BOOKING
+
+        // TASK 20 BANK ACCOUNT
+
+        // TASK 21 VEHICLE
 
     }
 }

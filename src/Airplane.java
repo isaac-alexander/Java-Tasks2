@@ -1,10 +1,8 @@
 // 12. Write a Java program to create a class called "Airplane" with a flight number,
 // destination, and departure time attributes, and methods to check flight status and delay.
 
-public class Task12Airplane {
-
-    static class Airplane {
-        String flightNumber;
+public class Airplane {
+     String flightNumber;
         String destination;
         String departureTime;
         boolean delayed;
@@ -37,23 +35,4 @@ public class Task12Airplane {
             System.out.println("Destination: " + destination);
             System.out.println("Departure Time: " + departureTime);
         }
-    }
-
-    public static void main(String[] args) {
-
-        // Create an Airplane object
-        Airplane flight1 = new Airplane("BA123", "London", "10:30 AM");
-
-        // Display flight information
-        flight1.displayFlightInfo();
-
-        // Check flight status (on time)
-        flight1.checkFlightStatus();
-
-        // Delay the flight
-        flight1.delayFlight();
-
-        // Check flight status again
-        flight1.checkFlightStatus();
-    }
 }
