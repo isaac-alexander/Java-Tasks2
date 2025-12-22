@@ -283,14 +283,104 @@ public class Test {
         // TASK 16 SHAPE
 
         // TASK 17 MOVIE
+        // Create a Movie object for Rush Hour
+        Movie movie1 = new Movie("Rush Hour", "Brett Ratner");
+
+        // Add actors
+        movie1.addActor("Jackie Chan");
+        movie1.addActor("Chris Tucker");
+
+        // Add reviews
+        movie1.addReview("Very funny and entertaining.");
+        movie1.addReview("Great action and comedy.");
+
+        // Display movie details
+        movie1.showMovieDetails();
+
+        // Display reviews
+        movie1.showReviews();
 
         // TASK 18 RESTAURANT
 
+        // Create a Restaurant object
+        Restaurant myRestaurant = new Restaurant();
+
+        // Add menu items (as requested)
+        myRestaurant.addItem("Burger", 5.99, 4);
+        myRestaurant.addItem("Pizza", 8.49, 5);
+        myRestaurant.addItem("Meat Pie", 4.25, 4);
+
+        // Show menu
+        myRestaurant.showMenu();
+
+        // Remove an item
+        myRestaurant.removeItem("Meat Pie");
+
+        // Show updated menu
+        myRestaurant.showMenu();
+
+        // Show average rating
+        System.out.println("Average Rating: " + myRestaurant.getAverageRating());
+
         // TASK 19 TRAVEL BOOKING
 
+        // Create TravelBooking object
+        TravelBooking travelBooking = new TravelBooking();
+
+        // Search for flights and hotels
+        travelBooking.searchFlight("London");
+        travelBooking.searchHotel("London");
+
+        // Book reservations
+        travelBooking.bookFlight();
+        travelBooking.bookHotel();
+
+        // Cancel reservations
+        travelBooking.cancelFlight();
+        travelBooking.cancelHotel();
+
         // TASK 20 BANK ACCOUNT
+        // Create SavingsAccount object
+        SavingsAccount savingsAcc = new SavingsAccount(
+                12345,
+                "John Doe",
+                1000.0,
+                5.0
+        );
+
+        System.out.println("Account Holder: " + savingsAcc.accountHolderName);
+        System.out.println("Account Number: " + savingsAcc.accountNumber);
+
+        savingsAcc.checkBalance();
+        savingsAcc.deposit(500);
+        savingsAcc.withdraw(300);
+        savingsAcc.applyInterest();
+        savingsAcc.checkBalance();
 
         // TASK 21 VEHICLE
+        // Create Car object
+        Car car1 = new Car("Toyota", "Corolla", 2020, 470);
+        car1.showDetails();
 
+        System.out.println();
+
+        // Create Truck object
+        Truck truck1 = new Truck("Ford", "F-150", 2019, 1200);
+        truck1.showDetails();
+
+        // TASK 22 CUSTOMER
+
+        Customer customer1 = new Customer("Alex", "alex@mail.com");
+        customer1.addPurchase(200);
+        customer1.addPurchase(150);
+
+        System.out.println("Customer Total Spent: " + customer1.getTotalSpent());
+
+        LoyalCustomer customer2 = new LoyalCustomer("Isaac", "isaac@mail.com", 0.10);
+        customer2.addPurchase(300);
+        customer2.addPurchase(200);
+
+        System.out.println("Loyal Customer Total Spent: " + customer2.getTotalSpent());
+        System.out.println("After Discount: " + customer2.getDiscountedTotal());
     }
 }
