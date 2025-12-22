@@ -2,74 +2,51 @@
 // with attributes for title, director, actors, and reviews,
 // and methods for adding and retrieving reviews.
 
-public class Task17Movie {
+public class Movie {
 
-    // Static inner class Movie
-    static class Movie {
+    String title;
+    String director;
+    String[] actors = new String[5];   // Stores actor names
+    String[] reviews = new String[10]; // Stores movie reviews
 
-        String title;
-        String director;
-        String[] actors = new String[5];   // Stores actor names
-        String[] reviews = new String[10]; // Stores movie reviews
+    int actorCount = 0;
+    int reviewCount = 0;
 
-        int actorCount = 0;
-        int reviewCount = 0;
+    // Constructor to set movie title and director
+    Movie(String title, String director) {
+        this.title = title;
+        this.director = director;
+    }
 
-        // Constructor to set movie title and director
-        Movie(String title, String director) {
-            this.title = title;
-            this.director = director;
-        }
+    // Method to add an actor
+    void addActor(String actorName) {
+        actors[actorCount] = actorName;
+        actorCount++;
+    }
 
-        // Method to add an actor
-        void addActor(String actorName) {
-            actors[actorCount] = actorName;
-            actorCount++;
-        }
+    // Method to add a review
+    void addReview(String review) {
+        reviews[reviewCount] = review;
+        reviewCount++;
+    }
 
-        // Method to add a review
-        void addReview(String review) {
-            reviews[reviewCount] = review;
-            reviewCount++;
-        }
-
-        // Method to display all reviews
-        void showReviews() {
-            System.out.println("Reviews for " + title + ":");
-            for (int i = 0; i < reviewCount; i++) {
-                System.out.println("- " + reviews[i]);
-            }
-        }
-
-        // Method to display movie details
-        void showMovieDetails() {
-            System.out.println("Title: " + title);
-            System.out.println("Director: " + director);
-            System.out.print("Actors: ");
-            for (int i = 0; i < actorCount; i++) {
-                System.out.print(actors[i] + " ");
-            }
-            System.out.println();
+    // Method to display all reviews
+    void showReviews() {
+        System.out.println("Reviews for " + title + ":");
+        for (int i = 0; i < reviewCount; i++) {
+            System.out.println("- " + reviews[i]);
         }
     }
 
-    public static void main(String[] args) {
-
-        // Create a Movie object for Rush Hour
-        Movie movie1 = new Movie("Rush Hour", "Brett Ratner");
-
-        // Add actors
-        movie1.addActor("Jackie Chan");
-        movie1.addActor("Chris Tucker");
-
-        // Add reviews
-        movie1.addReview("Very funny and entertaining.");
-        movie1.addReview("Great action and comedy.");
-
-        // Display movie details
-        movie1.showMovieDetails();
-
-        // Display reviews
-        movie1.showReviews();
+    // Method to display movie details
+    void showMovieDetails() {
+        System.out.println("Title: " + title);
+        System.out.println("Director: " + director);
+        System.out.print("Actors: ");
+        for (int i = 0; i < actorCount; i++) {
+            System.out.print(actors[i] + " ");
+        }
+        System.out.println();
     }
+
 }
