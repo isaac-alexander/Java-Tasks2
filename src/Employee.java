@@ -26,7 +26,7 @@ public class Employee {
 
         // Method to display employee details
         void displayEmployee() {
-            System.out.println("Name: " + name);
+            System.out.println("\nName: " + name);
             System.out.println("Job Title: " + jobTitle);
             System.out.println("Salary: " + salary);
         }
