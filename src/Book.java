@@ -23,7 +23,7 @@ public class Book {
             if (count < books.length) {
                 books[count] = b;
                 count++;
-                System.out.println("Book added: " + b.title);
+                System.out.println("\nBook added: " + b.title);
             } else {
                 System.out.println("Collection is full. Cannot add more books.");
             }
@@ -33,7 +33,7 @@ public class Book {
         void removeBook(String isbn) {
             for (int i = 0; i < count; i++) {
                 if (books[i].isbn.equals(isbn)) {
-                    System.out.println("Removing book: " + books[i].title);
+                    System.out.println("\nRemoving book: " + books[i].title);
 
                     // Shift elements left
                     for (int j = i; j < count - 1; j++) {
