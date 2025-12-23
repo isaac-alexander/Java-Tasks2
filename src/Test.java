@@ -382,5 +382,120 @@ public class Test {
 
         System.out.println("Loyal Customer Total Spent: " + customer2.getTotalSpent());
         System.out.println("After Discount: " + customer2.getDiscountedTotal());
+
+        // TASK 23 COURSE
+
+        // Normal course
+        Course course = new Course("Through Ball Basics", "KDB", 2);
+        course.displayDetails();
+
+        System.out.println();
+
+        // Online courses
+        OnlineCourse onlineCourse1 = new OnlineCourse(
+                "Double Touch and Rainbow Flick",
+                "Neymar",
+                4,
+                "YouTube",
+                15
+        );
+
+        OnlineCourse onlineCourse2 = new OnlineCourse(
+                "Pass Feint",
+                "Victor Boniface",
+                3,
+                "Twitch",
+                7
+        );
+
+        // Display details
+        onlineCourse1.displayDetails();
+        System.out.println();
+
+        onlineCourse2.displayDetails();
+        System.out.println();
+
+        // Certificate check for first course
+        if (onlineCourse1.isEligibleForCertificate()) {
+            System.out.println("Double Touch and Rainbow Flick is eligible for a certificate.");
+        } else {
+            System.out.println("Double Touch and Rainbow Flick is NOT eligible for a certificate.");
+        }
+
+        // Certificate check for second course
+        if (onlineCourse2.isEligibleForCertificate()) {
+            System.out.println("Pass Feint is eligible for a certificate.");
+        } else {
+            System.out.println("Pass Feint is NOT eligible for a certificate.");
+        }
+
+
+        // TASK 24 ELECTRONICS PRODUCT
+
+        // Normal electronics product
+        ElectronicsProduct phone = new ElectronicsProduct(101, "Smartphone", 800);
+        phone.applyDiscount(10);
+        phone.displayDetails();
+
+        System.out.println();
+
+        // Washing machine
+        WashingMachine washer = new WashingMachine(202, "LG Washing Machine", 1200, 2);
+        washer.applyDiscount(15);
+        washer.extendWarranty(1);
+        washer.displayDetails();
+
+        // TASK 25 BUILDING
+        // Residential building
+        ResidentialBuilding residential = new ResidentialBuilding(
+                "12 Adekoya Street",
+                5,
+                1200,
+                10,
+                15000
+        );
+
+        // Commercial building
+        CommercialBuilding commercial = new CommercialBuilding(
+                "45 Ilupeju Avenue",
+                8,
+                3000,
+                2000,
+                50
+        );
+
+        System.out.println("Residential Building:");
+        residential.displayDetails();
+
+        System.out.println();
+
+        System.out.println("Commercial Building:");
+        commercial.displayDetails();
+
+        // TASK 26 EVENT
+        // Create seminar
+        Seminar seminar = new Seminar("Tech Seminar", "2025-10-10", "Hall A", 3);
+
+        // Create musical performance
+        MusicalPerformance concert = new MusicalPerformance("Live Concert", "2025-10-10", "Hall A");
+
+        concert.addPerformer("Dave");
+        concert.addPerformer("Giggs");
+
+        // Display details
+        seminar.displayDetails();
+        System.out.println();
+        concert.displayDetails();
+
+        System.out.println();
+
+        // Check for schedule conflict
+        if (seminar.hasConflict(concert)) {
+            System.out.println("Conflict detected: Events overlap in schedule.");
+        } else {
+            System.out.println("No conflict: Events are scheduled safely.");
+        }
+
+        // TASK 27
     }
 }
