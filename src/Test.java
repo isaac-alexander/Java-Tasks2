@@ -265,7 +265,7 @@ public class Test {
             System.out.println(mySchool.classes[i].className);
         }
 
-            // TASK 15 MUSIC LIBRARY
+        // TASK 15 MUSIC LIBRARY
 
         MusicLibrary myMusicLibrary = new MusicLibrary();
 
@@ -496,6 +496,93 @@ public class Test {
             System.out.println("No conflict: Events are scheduled safely.");
         }
 
-        // TASK 27
+        // TASK 27 CUSTOMER ORDER
+        OnlineOrder order = new OnlineOrder(
+                1001,
+                "Alexander Isaac",
+                LocalDate.now(),
+                "Lagos",
+                "TRK123456"
+        );
+
+        order.displayDetails();
+
+        System.out.println();
+
+        // Update tracking status
+        order.updateTrackingStatus("Out for Delivery");
+
+        System.out.println("After status update:");
+        order.displayDetails();
+
+        // TASK 28 RESERVATION
+
+        ResortReservation resortReservation = new ResortReservation(
+                201,
+                "Alex",
+                LocalDate.of(2025, 6, 10),
+                619
+        );
+
+        RailwayReservation railwayReservation = new RailwayReservation(
+                202,
+                "Bella",
+                LocalDate.of(2025, 6, 12),
+                "M4"
+        );
+
+        resortReservation.displayDetails();
+        System.out.println();
+
+        railwayReservation.displayDetails();
+        System.out.println();
+
+        // Modify reservations
+        resortReservation.changeRoom(911);
+        railwayReservation.changeSeat("M13");
+
+        System.out.println("After changes:");
+        resortReservation.displayDetails();
+        System.out.println();
+        railwayReservation.displayDetails();
+
+        // TASK 29 PET
+
+        DogPet dog = new DogPet(
+                "Kiba",
+                4,
+                "Ball"
+        );
+
+        Bird bird = new Bird(
+                "Sky",
+                2,
+                1.2
+        );
+
+        dog.displayDetails();
+        System.out.println();
+
+        bird.displayDetails();
+
+        // TASK 30 GYM MEMBERSHIP
+        GymMembership basicMember = new GymMembership(
+                "Alex",
+                "Basic",
+                6
+        );
+
+        PremiumMembership premiumMember = new PremiumMembership(
+                "Sarah",
+                12,
+                true,
+                true
+        );
+
+        basicMember.displayDetails();
+        System.out.println();
+
+        premiumMember.displayDetails();
+
     }
 }
